@@ -1,11 +1,12 @@
-import ReactDOM from 'react-dom'
+import ReactDOM from 'react-dom';
+import UserSearch from "./state/UserSearch";
 
 const App = () => {
-    return (
-        <div>
-            <h1>Hi there!</h1>
-        </div>
-    )
+  return (
+    <div>
+      <UserSearch />
+    </div>
+  );
 };
 
-ReactDOM.render(<App />,document.getElementById('root'))
+ReactDOM.render(<App />, document.querySelector('#root'));
